@@ -1,0 +1,14 @@
+{
+	"maxplayers" : 10,
+	"name" : "NO-ENTRY-TESTING", 
+	"gamemode" : "Testing", 
+	"stream-distance" : 500.0,
+	"sync-rate" : 500,
+	"announce" : true,
+	"csharp" : "disabled",
+	"enable-http-security" : true,
+	"max-ping" : 250,
+	"min-fps" : 10,
+	"language" : "ru",
+	"port": 22005
+}
