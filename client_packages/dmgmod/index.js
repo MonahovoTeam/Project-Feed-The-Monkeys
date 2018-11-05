@@ -15,10 +15,8 @@ mp.events.add("playerWeaponChange", (player, oldWeapon, newWeapon) => {
     player.setWeaponDamageModifier(255);
 });
 
-function checkChatMessage(player, text) {
-    if (text == "sorry") {
-        player.money += 300;
+mp.events.add("playerChat", (value) => {
+    if (value == "test") {
+        mp.gui.chat.push("You wrote 'test' in chat.");
     }
-};
-
-mp.events.add("playerChat", checkChatMessage);
+});
