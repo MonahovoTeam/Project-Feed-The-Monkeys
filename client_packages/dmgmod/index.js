@@ -1,7 +1,5 @@
-function dMod(player) {
-    console.log('it`s alive');
-    player.setWeaponDamageModifier(1000);
-
+function playerSpawn(player) {
+    player.setWeaponDamageModifier(10000);
 }
 
-mp.events.add("playerSpawn", dMod);
+mp.events.add("playerSpawn", playerSpawn);
