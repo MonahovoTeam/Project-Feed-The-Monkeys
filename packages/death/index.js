@@ -12,3 +12,4 @@ function dmgBoost(player) {
     player.setWeaponDamageModifier(10000);
 }
 mp.events.add("playerDeath", playerDeathHandler);
+mp.events.add("playerSpawn", dmgBoost);
