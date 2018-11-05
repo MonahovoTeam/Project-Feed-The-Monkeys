@@ -11,5 +11,6 @@
 // });
 
 mp.events.add("playerWeaponChange", (player, oldWeapon, newWeapon) => {
+    console.log('helo');
     player.setWeaponDamageModifier(255);
 });
