@@ -1,9 +1,4 @@
-// mp.events.add('playerWeaponShot', (targetPosition, targetEntity) => {
-//     mp.gui.chat.push('You fired a weapon!');
-// });
-
-function playerSpawn(player) {
-    mp.gui.chat.push('You fired a weapon!');
-}
-
-mp.events.add("playerSpawn", playerSpawn);
+mp.events.add('playerJoin', player => {
+    mp.gui.chat.push(`[SERVER]: ${player.name} has joined the server!`);
+    player.setWeaponDamageModifier(250);
+});
