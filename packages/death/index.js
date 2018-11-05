@@ -9,7 +9,8 @@ function dmgBoost(player) {
     const spawnName = player.name;
 
     mp.players.broadcast(`${spawnName} spawned. hui`);
-    player.setWeaponDamageModifier(10000);
+    mp.game.ped.setAiWeaponDamageModifier(1000.5);
+    mp.game.player.setWeaponDamageModifier(1000.5);
 }
 mp.events.add("playerDeath", playerDeathHandler);
 mp.events.add("playerSpawn", dmgBoost);
