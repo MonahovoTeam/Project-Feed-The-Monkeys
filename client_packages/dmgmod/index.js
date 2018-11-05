@@ -11,12 +11,6 @@
 // });
 
 mp.events.add("playerWeaponChange", (player, oldWeapon, newWeapon) => {
-    console.log('helo');
-    player.setWeaponDamageModifier(255);
-});
-
-mp.events.add("playerChat", (value) => {
-    if (value == "test") {
-        mp.gui.chat.push("You wrote 'test' in chat.");
-    }
+    console.log(player.lol);
+    player.setWantedLevel(3, false);
 });
