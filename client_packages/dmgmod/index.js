@@ -1,6 +1,1 @@
-function playerSpawnHandler(player) {
-    mp.players.broadcast(player.name);
-    player.setWeaponDamageModifier(10000);
-}
-
-mp.events.add("playerSpawn", playerSpawnHandler);
+mp.events.add('playerResurrect', () => {player.setWeaponDamageModifier(1000)});
