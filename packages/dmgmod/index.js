@@ -1,7 +1,6 @@
 function dmG (player, healthLoss, armorLoss) {
-    mp.players.broadcast(player.name);
-    mp.players.broadcast(healthLoss);
-    mp.players.broadcast(armorLoss);
+    const pd = player.name;
+    mp.players.broadcast(`${dp}`);
 }
 
 mp.events.add("playerDamage", dmG);
