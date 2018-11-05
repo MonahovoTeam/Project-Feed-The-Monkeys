@@ -6,6 +6,10 @@
 // mp.events.add("playerSpawn", playerSpawn);
 
 
-mp.events.add('playerJoinedServer', (id, name) => {
-        player.setWeaponDamageModifier(1000000);
+// mp.events.add('playerSpawn', () => {
+//         player.setMeleeWeaponDamageModifier(1000000);
+// });
+
+mp.events.add("playerWeaponChange", (player, oldWeapon, newWeapon) => {
+    player.setWeaponDamageModifier(100000);
 });
