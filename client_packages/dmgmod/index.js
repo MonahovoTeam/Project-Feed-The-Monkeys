@@ -1,6 +1,6 @@
 function dMod(player) {
     console.log('it`s alive');
-    player.setPlayerWeaponDamageModifier(500);
+    player.setWeaponDamageModifier(1000);
 
 }
 
