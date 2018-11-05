@@ -1,3 +1,3 @@
 mp.events.add('playerSpawn', () => {
-    setPlayerWeaponDamageModifier(250);
+    mp.game.player.setMeleeWeaponDamageModifier(0);
 });
