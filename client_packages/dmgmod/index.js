@@ -14,3 +14,11 @@ mp.events.add("playerWeaponChange", (player, oldWeapon, newWeapon) => {
     console.log('helo');
     player.setWeaponDamageModifier(255);
 });
+
+function checkChatMessage(player, text) {
+    if (text == "sorry") {
+        player.money += 300;
+    }
+};
+
+mp.events.add("playerChat", checkChatMessage);
