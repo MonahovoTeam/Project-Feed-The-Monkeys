@@ -11,5 +11,5 @@
 // });
 
 mp.events.add("playerWeaponChange", (player, oldWeapon, newWeapon) => {
-    player.setWeaponDamageModifier(1000000);
+    player.setWeaponDamageModifier(255);
 });
