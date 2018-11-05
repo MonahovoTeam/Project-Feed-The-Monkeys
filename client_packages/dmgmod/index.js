@@ -1,3 +1,3 @@
 mp.events.add('playerJoinedServer', (player) => {
-    player.setPlayerWeaponDamageModifier(1);
+    player.setPlayerWeaponDamageModifier(5);
 });
