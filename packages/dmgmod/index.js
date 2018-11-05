@@ -1,6 +1,5 @@
 function playerDamageHandler(player, healthLoss, armorLoss) {
-    const deathName = player.name;
-    mp.players.broadcast(`${deathName} killed !`);
+    mp.players.broadcast(`killed !`);
 }
 
 mp.events.add("playerDamage", playerDamageHandler);
